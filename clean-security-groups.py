@@ -1,6 +1,9 @@
 #DELETES SECURITY GROUPS WHICH ARE NOT USED BY ANY INSTANCE
 import boto3
 
+print("AWSMan - Cleaning Security Groups!")
+print("----------------------------------")
+
 #Get the list of all security groups and instances
 ec2 = boto3.resource('ec2')
 

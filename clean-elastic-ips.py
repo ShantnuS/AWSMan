@@ -1,6 +1,9 @@
 #RELEASES ELASTIC IPS WHICH ARE NOT ASSIGNED TO ANY INSTANCE
 import boto3
 
+print("AWSMan - Cleaning Elastic IPs!")
+print("------------------------------")
+
 #Releases elastic IP specified by its allocation ID 
 def release_elastic_IP(ec2, allocation_id):
     try:
